@@ -1,5 +1,9 @@
 import React from 'react'
 
+import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
+
+
 
 function TupleComponent() {
 
@@ -17,8 +21,8 @@ function TupleComponent() {
     <div>
       <p>Estado Booleano: {state[0] ? 'Verdadero' : 'Falso'}</p>
       <p>Estado String: {state[1]}</p>
-      <button onClick={() => updateState(!state[0])}>Cambiar Booleano</button>
-      <button onClick={() => updateState('Nuevo mensaje')}>Cambiar String</button>
+      <Button startIcon={<Chip label="Boleand" color="primary" />}onClick={() => updateState(!state[0])}></Button>
+      <Button startIcon={<Chip label="String" color="primary" />} onClick={() => updateState('Nuevo mensaje')}></Button>
     </div>
   );
 }

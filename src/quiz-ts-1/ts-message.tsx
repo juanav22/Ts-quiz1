@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Box } from '@mui/material';
+
 interface MessageProps {
   message?: string;
 }
@@ -7,9 +9,9 @@ interface MessageProps {
 function MessageDisplay({ message }: MessageProps) {
     
   return (
-    <div>
+    <Box>
       {message ? <p>{message}</p> : <p>No hay mensaje.</p>}
-    </div>
+    </Box>
   );
 }
 
