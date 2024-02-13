@@ -1,17 +1,20 @@
 import React from 'react';
 
-type InputValue = string | number | MyObject;
+import Box from '@mui/material/Box'
 
-interface MyObject {
+
+interface Person {
   name: string;
   age: number;
 }
 
-interface InputDisplayProps {
+type InputValue = string | number | Person;
+interface TsInputProps {
   value: InputValue;
 }
 
-function InputDisplay({ value }: InputDisplayProps) {
+function TsInput({ value = 0 }: TsInputProps) {
+
   const renderValue = () => {
     if (typeof value === 'string') {
       return <p>String: {value}</p>;
@@ -23,10 +26,10 @@ function InputDisplay({ value }: InputDisplayProps) {
   };
 
   return (
-    <div>
+    <Box>
       {renderValue()}
-    </div>
+    </Box>
   );
 }
 
-export default InputDisplay;
+export default TsInput;

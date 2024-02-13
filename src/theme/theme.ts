@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import {error} from 'console';
+
 
 export const theme = createTheme ({
     palette: {
@@ -16,12 +16,12 @@ export const theme = createTheme ({
     components: {
         MuiButton: {
           styleOverrides: {
-            root: { // Aplica estilos a todos los estados del botón
-              color: 'white', // Texto blanco para todos los botones
-              '&.MuiButton-containedPrimary': { // Botón primario
-                backgroundColor: '#00796B', // Teal
+            root: { 
+              color: 'white', 
+              '&.MuiButton-containedPrimary': { 
+                backgroundColor: '#00796B', 
                 '&:hover': {
-                  backgroundColor: '#005A4F', // Teal oscuro al pasar el mouse
+                  backgroundColor: '#005A4F', 
                 },
               },
             },
@@ -29,20 +29,20 @@ export const theme = createTheme ({
         },
         MuiChip: {
             styleOverrides: {
-              root: { // Estilos para el chip por defecto
-                backgroundColor: '#00796B', // Teal para el fondo
-                color: '#FFFFFF', // Texto blanco
-                '&.MuiChip-outlined': { // Chip delineado
-                  borderColor: '#FFAB00', // Borde ámbar
-                  color: '#FFAB00', // Texto ámbar
+              root: { 
+                backgroundColor: '#00796B', 
+                color: '#FFFFFF', 
+                '&.MuiChip-outlined': { 
+                  borderColor: '#FFAB00', 
+                  color: '#FFAB00', 
                 },
               },
             },
         },
         MuiAppBar: {
             styleOverrides: {
-              colorPrimary: { // AppBar con color primario
-                backgroundColor: '#004D40', // Dark Teal
+              colorPrimary: { 
+                backgroundColor: '#004D40', 
               },
             },
         },

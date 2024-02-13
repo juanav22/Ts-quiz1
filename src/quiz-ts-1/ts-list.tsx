@@ -2,10 +2,10 @@ import React from 'react'
 
 interface ListProps<T> {
   items: T[];
-  renderItem: (item: T) => React.ReactNode;
+  renderItem?: (item: T) => React.ReactNode;
 }
 
-function List<T>({ items, renderItem }: ListProps<T>) {
+function TsList<T>({ items, renderItem = () => <span>hello</span> }: ListProps<T>) {
 
   return (
     <ul>
@@ -16,4 +16,4 @@ function List<T>({ items, renderItem }: ListProps<T>) {
   );
 }
 
-export default List;
+export default TsList;

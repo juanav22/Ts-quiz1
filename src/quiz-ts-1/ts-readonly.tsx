@@ -6,7 +6,7 @@ interface ReadonlyArrayProps<T> {
 
 
 
-function ReadonlyArrayDisplay<T>({ items }: ReadonlyArrayProps<T>) {
+function TsRedonly<T>({ items }: ReadonlyArrayProps<T>) {
 
   return (
     <ul>
@@ -18,4 +18,4 @@ function ReadonlyArrayDisplay<T>({ items }: ReadonlyArrayProps<T>) {
 }
 
 
-export default ReadonlyArrayDisplay;
+export default TsRedonly;

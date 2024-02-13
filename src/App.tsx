@@ -1,8 +1,9 @@
 import React from 'react';
+
+
 import { TsBasics, TsUserProfile, TsCounter, TsButton, TsMessage, ThemeProvider, TsList, TsReadonly, TsInput, TsTuple } from './quiz-ts-1';
-import { Button, Toolbar, Typography, Chip } from '@mui/material';
 import AppBar from './theme/appBar'
-// import Theme from './theme/theme';
+
 import './App.css';
 
 
@@ -12,8 +13,6 @@ function App() {
   const readonlyStrings = ['Apple', 'Banana', 'Cherry'];
 
   return (
-
-    
     <ThemeProvider theme="dark">
       <AppBar/>
       <div className="App">

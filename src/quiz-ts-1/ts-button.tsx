@@ -1,11 +1,13 @@
 import React from 'react'
+
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box'
 
 interface CounterState {
   count: number;
 }
 
-function EventHandlingComponent() {
+function TsButton() {
 
   const [state, setState] = React.useState<CounterState>({ count: 0 });
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -13,11 +15,11 @@ function EventHandlingComponent() {
   };
 
   return (
-    <div>
+    <Box>
       <h1>Contador: {state.count}</h1>
       <Button variant="contained" onClick={handleClick} color='error'>Hazme clic</Button>
-    </div>
+    </Box>
   );
 }
 
-export default EventHandlingComponent;
+export default TsButton;

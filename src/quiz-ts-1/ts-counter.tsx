@@ -1,7 +1,8 @@
 import React from 'react';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box'
 
-function Counter() {
+function TsCounter() {
 
   const [count, setCount] = React.useState<number>(0);
   function increment() {
@@ -14,12 +15,12 @@ function Counter() {
   }
 
   return (
-    <div>
+    <Box>
       <h1>Contador: {count}</h1>
       <Button variant='contained' color= 'secondary' onClick={increment}>Incrementar</Button>
       <Button variant='contained' color='primary' onClick={decrement} disabled={count === 0}>Decrementar</Button>
-    </div>
+    </Box>
   );
 }
 
-export default Counter;
+export default TsCounter;
